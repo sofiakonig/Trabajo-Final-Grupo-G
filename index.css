@@ -306,7 +306,7 @@ td {
             justify-content: center;
     }
     .flex-container-secundario img {
-        display: inline-block
+        display: inline-block;
         margin: 5px;
         width: 200px;
         height: 120px;
@@ -378,7 +378,7 @@ td {
         margin: 40px;        
     }
     .flex-container-secundario img {
-        display: inline-block
+        display: inline-block;
         margin: 5px;
         width: 280px;
         height: 200px;

@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Juana",
+        "apellido": "de Arco",
+        "correo electronico": "juanadearco@gmail.com",
+        "telefono": "11-111-111",
+        "destino de viaje": "Argentina",
+        "Fecha de viaje": "11/02/2024",
+        "contraseña": "12345",
+        "confirmar contraseña": "12345"
+    },
+    {
+        "id": 2,
+        "nombre": "Pedro",
+        "apellido": "García",
+        "correo electronico": "pedrogarcia@gmail.com",
+        "telefono": "11-111-333",
+        "destino de viaje": "Peru",
+        "Fecha de viaje": "12/05/2024",
+        "contraseña": "45678",
+        "confirmar contraseña": "45678"
+
+    },
+    {
+        "id": 3,
+        "nombre": "Martina",
+        "apellido": "Marquez",
+        "correo electronico": "martinamarquez@gmail.com",
+        "telefono": "11-123-123",
+        "destino de viaje": "Chile",
+        "Fecha de viaje": "22/06/2024",
+        "contraseña": "45897",
+        "confirmar contraseña": "45897"
+    },
+    {
+        "id": 4,
+        "nombre": "Emilia",
+        "apellido": "Martinez",
+        "correo electronico": "emiliamartinez@gmail.com",
+        "telefono": "11-432-345",
+        "destino de viaje": "Uruguay",
+        "Fecha de viaje": "21/08/2024",
+        "contraseña": "12345",
+        "confirmar contraseña": "12345"
+    },
+    {
+        "id": 5,
+        "nombre": "Esteban",
+        "apellido": "Ripoll",
+        "correo electronico": "estebanripoll@gmail.com",
+        "telefono": "11-354-311",
+        "destino de viaje": "Argentina",
+        "Fecha de viaje": "30/01/2024",
+        "contraseña": "15555",
+        "confirmar contraseña": "15555"
+    }
+]

@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "destino": "Argentina",
+        "subdestino": "San Carlos de Bariloche",
+        "dias": "5",
+        "incluye": "hotel, desayuno, circuito chico",
+        "precio": "2500usd"
+    },
+    {
+        "id": 2,
+        "destino": "Argentina",
+        "subdestino": "Salta",
+        "dias": "8",
+        "incluye": "hotel, aereos, excursión a Iruya",
+        "precio": "4500usd"
+    },
+    {
+        "id": 3,
+        "destino": "Argentina",
+        "subdestino": "Misiones",
+        "dias": "5",
+        "incluye": "hotel con desayuno, excursión a Cataratas",
+        "precio": "2500usd"
+    },
+    {
+        "id": 4,
+        "destino": "Conociendo Argentina",
+        "subdestino": "Calafate, Salta, Mendoza",
+        "dias": "15",
+        "incluye": "All inclusive",
+        "precio": "6000usd"
+    },
+    {
+        "id": 5,
+        "destino": "Perú",
+        "subdestino": "Lima",
+        "dias": "5",
+        "incluye": "hotel con desayuno, excursión a Nor-Yauyos",
+        "precio": "2500usd"
+    },
+    {
+        "id": 6,
+        "destino": "Perú",
+        "subdestino": "Cusco",
+        "dias": "8",
+        "incluye": "hotel, aereos, excursión a Machu-Pichu",
+        "precio": "4500usd"
+    },
+    {
+        "id": 7,
+        "destino": "Perú",
+        "subdestino": "Arequipa",
+        "dias": "5",
+        "incluye": "hotel con desayuno, excursión a Cañón del Colca",
+        "precio": "2500usd"
+    },
+    {
+        "id": 8,
+        "destino": "Uruguay",
+        "subdestino": "Montevideo",
+        "dias": "7",
+        "incluye": "hotel con desayuno, excursión a Palacio Salvo",
+        "precio": "5000usd"
+    },
+    {
+        "id": 9,
+        "destino": "Uruguay",
+        "subdestino": "Punta del Este",
+        "dias": "8",
+        "incluye": "hotel, aereos, excursión a playa Ballena",
+        "precio": "5500usd"
+    },
+    {
+        "id": 10,
+        "destino": "Chile",
+        "subdestino": "Isla de Pascua",
+        "dias": "5",
+        "incluye": "hotel, aereos, excursión a Circuito Chico",
+        "precio": "5000usd"
+    }
+
+]

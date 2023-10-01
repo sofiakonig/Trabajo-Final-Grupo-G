@@ -85,7 +85,7 @@ p{
     padding: 20px;
 }
 
-form{
+.recibi-ofertas{
     color: #0a3143;
     margin: 15px;
     display: inline-block;
@@ -102,6 +102,26 @@ fieldset{
     color: #0a3143;
     font-size: 15px;
     padding: 10px
+}
+
+.irAlInicio a{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    background-color:  #91dafc6c;
+    border: 6px solid rgb(255, 255, 255) ;
+}
+.registrate{
+    font-size: 18px;
+    padding: 15px;
+   text-decoration: underline;
+
+}
+.registrate:hover {
+    font-size: 24px;
 }
 
 footer{
@@ -205,6 +225,204 @@ td {
    border: 1px solid #0a3143;
    padding: 3px; 
  }
+
+ /*Formulario Registro*/
+ .formulario{
+    background-color: rgb(204, 197, 197);
+    border-radius: 10px;
+ }
+ .form-cuerpo{
+    display: inline-block;
+    margin: 20px;
+    width: 60%;
+
+ }
+ .formulario h2{
+    font-size: 20px;
+    padding-top: 25px;
+ }
+.formulario label{
+    font-size: 14px;
+    margin: 8px;
+    width: 100%;
+}
+.formulario select{
+    font-size: 14px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+
+}
+.formulario input{
+    height: 30px;
+    width: 100%;
+    border-radius: 8px;
+    border-color: #efefef;
+    text-align: center;
+}
+
+.btn-register{
+    display: block;    
+}
+.formulario a{
+    display: block;
+}
+.formulario form{
+    background-color: rgb(204, 197, 197)
+}
+.btn-register{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.btn-register:hover{
+background-color: #0a3143;
+}
+.enlace-cuenta{
+    font-size: 11px;
+    text-decoration: underline ;
+}
+
+/*Formulario Login*/
+
+main#ventana-login {
+    margin: 0px 0px;
+    max-width: 100%;
+    width: 100%;
+    background-position: center;
+}
+
+#ventana {
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 70px auto;
+    row-gap: 20px;
+    padding: 10px;
+    align-items: center;
+}
+
+#ventana>h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#ventana>form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 80%;
+}
+
+#ventana form>input {
+    font-size: 14px;
+    line-height: 24px;
+    text-indent: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#ventana>p {
+    font-size: 12px;
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+    margin:5px;
+}
+
+#ventana>button {
+    border: transparent;
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#ventana>button>a {
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+}
+#loginBtn{
+    padding: 5px;
+    margin:5px;
+    border-radius: 10px;
+
+}
+
+.go-to-regis {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.go-to-regis>b {
+    width: 50%;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.go-to-regis>a {
+    width: 50%;
+    font-size: 12px;
+    line-height: 20px;
+    background-color:rgb(204, 197, 197);
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+}
+
+.ingreso-con-red {
+    display: flex;
+    width: 80%;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    border-radius: 5px;
+}
+
+.ingreso-con-red.face {
+    background-color: #3b5998;
+    color: white;
+    font-size: 12px;
+    border: 1px solid #3b5998;
+
+}
+
+.ingreso-con-red.google {
+    background-color: #db4a39;
+    color: white;
+    font-size: 12px;
+    border: 1px solid #db4a39;
+}
+
+#ventana>form>a:visited {
+    color: black;
+}
+
+.recordar-usuario-container {
+    display: flex;
+    align-items: center;
+}
+
+.recordar-usuario-label {
+    color: #333;
+    font-size: 14px;
+}
+
+.recordar-usuario-checkbox {
+    transform: scale(0.8);
+    margin-left: 3px;
+    height: 14px;
+    width: 14px;
+}
 
 @media(min-width: 768px){
     #logo{
@@ -328,6 +546,64 @@ td {
         #tabla {
             font-size: 15px;
     }
+    /*Formulario Registro*/
+    
+ 
+ .form-cuerpo{
+    margin: 20px;
+    width: 60%;
+
+ }
+ .formulario h2{
+    font-size: 30px;
+    padding-top: 25px;
+ }
+.formulario label{
+    display: block;
+    font-size: 18px;
+    margin: 8px;
+    width: 100%;
+}
+.formulario select{
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+
+}
+.formulario input{
+    height: 30px;
+    width: 100%;
+    border-radius: 8px;
+    border-color: #efefef;
+    text-align: center;
+}
+
+.btn-register{
+    display: block;    
+}
+.formulario a{
+    display: block;
+}
+.formulario form{
+    background-color: rgb(204, 197, 197)
+}
+.btn-register{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 20%;
+}
+.btn-register:hover{
+background-color: #0a3143;
+}
+.enlace-cuenta{
+    font-size: 18px;
+    text-decoration: underline ;
+}
+
 }
 @media(min-width: 1000px){
     #logo{
@@ -355,6 +631,7 @@ td {
         width: 380px;
         height: 380px;
     }
+ 
     iframe{
         height: 400px;
         width: 450px;

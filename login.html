@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a7f4aae58a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Login usuario</title>
+    <script src="https://kit.fontawesome.com/a7f4aae58a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo" class="imagenesredes" src="logo.webp" alt="">
+        <h1>TURISMO INGENIAS</h1>
+    </header>
+    <main id="ventana-login">
+        <div id="ventana">
+            <h3>Iniciar Sesión</h3>
+            <form class="login" action="/login" method="POST">
+
+                <label for="email" id="errorId" class="error">
+
+                </label>
+
+
+                <!-- EMAIL -->
+                <div class="error" id="valdiationEmail">
+                    <ul></ul>
+                </div>
+                <input class="email inputForm" type="email" name='email' id="email" placeholder="Email">
+
+
+                <!-- PASSWORD -->
+                <div class="error" id="valdiationPassword">
+                    <ul></ul>
+                </div>
+                <input class="password inputForm" type="password" name='password' id="password"
+                    placeholder="Contraseña">
+
+                <button type="submit" id="loginBtn">Ingresar</button>
+
+            </form>
+            <div class="recordar-usuario-container">
+                <label for="recordarUsuario" class="recordar-usuario-label">Recordar Usuario</label>
+                <input type="checkbox" name="remember-user" id="recordarUsuario" class="recordar-usuario-checkbox">
+            </div>
+            <p><a href="#">Me olvide la contraseña</a></p>
+            <div class="ingreso-con-red face"><i class="fa-brands fa-facebook-f"></i>Ingresar con Facebook
+            </div>
+            <div class="ingreso-con-red google"><i class="fa-brands fa-google"></i>Ingresar con Google</div>
+            <div class="go-to-regis"><b>¿Aun no tienes cuenta?</b><a href="registrarse.html">Registrate</a></div>
+        </div>
+    </main>
+</body>
+
+</html>

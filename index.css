@@ -28,7 +28,7 @@ h1{ /*Titulo principal*/
     margin: 15px 0px 15px 0px;
 }
 
-li { /*Barra de navegacion*/
+ li { /*Barra de navegacion*/
     list-style-type: none;
     font-size: 18px;
     text-decoration: none;    
@@ -424,6 +424,84 @@ main#ventana-login {
     width: 14px;
 }
 
+/*Nuestra Tienda*/
+#tienda-nav{
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+#tienda-nav>h2{
+    font-size: 20px;
+}
+.listas-nav {
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    border-color: #eaf3f8;
+
+}
+
+.listas-nav ul li {
+    font-size: 12px;
+}
+
+.listas-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 10px;
+}
+
+.productos {
+    display: grid;
+    justify-items: center;
+}
+
+.producto {
+    width: 60%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.producto h3{
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+.producto h4{
+    font-size: 15px;
+    text-align: center;
+    margin: 2px;
+}
+.producto img {
+    max-width: 100%;
+}
+.producto p{
+    text-align: center;
+    padding: 10px;
+}
+.producto button{
+    border-radius: 10px;
+    padding: 10px;
+    color:#0a3143;
+}
+.producto button:hover{
+    background-color:#0a3143;
+    color: #ccc;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
 @media(min-width: 768px){
     #logo{
         width: 300px;
@@ -603,6 +681,7 @@ background-color: #0a3143;
     font-size: 18px;
     text-decoration: underline ;
 }
+/*Tienda*/
 
 }
 @media(min-width: 1000px){
@@ -694,5 +773,7 @@ background-color: #0a3143;
         margin: 50px;
         font-size: 20px;
     }
+    /*Tienda*/
+
 }
 

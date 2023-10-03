@@ -25,7 +25,5 @@ document.getElementById('newslatter').addEventListener('submit', function(event)
     // mostrar JSON en la consola para verificar
     console.log(jsonString);
 
-    // Aquí puedes hacer lo que quieras con la cadena JSON, por ejemplo, enviarla a un servidor
-
-    // Si deseas guardar el JSON localmente, puedes usar localStorage
+    // guardar el JSON en localStorage
     localStorage.setItem('jsonCorreos', jsonString); })

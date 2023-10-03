@@ -261,7 +261,12 @@ td {
     border-color: #efefef;
     text-align: center;
 }
-
+.formulario div{
+    font-size: 14px;
+    margin: 8px;
+    width: 100%;
+    color: red;
+}
 .btn-register{
     display: block;    
 }

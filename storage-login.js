@@ -6,18 +6,20 @@
             event.preventDefault();
             let inputUsuario = document.getElementById("email").value;
             if (correosRegistrados.includes(inputUsuario)) {
-                let p = document.createElement ("p")
-                p.innerText = "Ingreso con exito"
-                
-                document.querySelector("form").appendChild (p) 
+               /* let p = document.createElement ("p");
+                p.innerText = "Ingreso con exito";
+                document.querySelector("form").appendChild (p) */
+                document.querySelector("form").innerText = "Ingreso con exito "
                 sessionStorage.setItem("sesionIniciada", true)
                 sessionStorage.setItem("username", inputUsuario)
                 console.log(sessionStorage);
             } else {
-                let p = document.createElement ("p")
+                /*let p = document.createElement ("p")
                 p.innerText = "Intente de nuevo"
-                document.querySelector("form").appendChild(p)
+                document.querySelector("form")(p)*/
+                document.querySelector("form").innerText = "Intente de nuevo";
+        }
             }
     
         }
-    }
+    

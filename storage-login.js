@@ -1,29 +1,23 @@
-/*const baseDeDatosCorreos = {
-correos: ["juanadearco@gmail.com", "pedrogarcia@gmail.com","martinamarquez@gmail.com", "emiliamartinez@gmail.com", "estebanripoll@gmail.com"]
-}
-
-localStorage.setItem('baseDeDatosCorreos', JSON.stringify(baseDeDatosCorreos));
-
-const baseDeDatosRecuperada = JSON.parse(localStorage.getItem('baseDeDatosCorreos')) || {};
-
-const listaDeCorreos = baseDeDatosRecuperada.correos || [];
-
-console.log(listaDeCorreos);*/
-
-document.getElementById('newslatter').addEventListener('submit', function(event){
-    event.preventDefault(); // Evita que el formulario se envíe automáticamente
-
-    // registra el valor del input
-    let email = document.getElementById('barra').value;
+    window.onload = () => {
+        let boton = document.querySelector("#loginBtn");
+        let correosRegistrados = JSON.parse(localStorage.getItem("correosRegistrados")) || ["juanadearco@gmail.com", "pedrogarcia@gmail.com", "martinamarquez@gmail.com", "emiliamartinez@gmail.com", "estebanripoll@gmail.com"];
+        console.log(correosRegistrados)
+        boton.onclick = (event) => {
+            event.preventDefault();
+            let inputUsuario = document.getElementById("email").value;
+            if (correosRegistrados.includes(inputUsuario)) {
+                let p = document.createElement ("p")
+                p.innerText = "Ingreso con exito"
+                
+                document.querySelector("form").appendChild (p) 
+                sessionStorage.setItem("sesionIniciada", true)
+                sessionStorage.setItem("username", inputUsuario)
+                console.log(sessionStorage);
+            } else {
+                let p = document.createElement ("p")
+                p.innerText = "Intente de nuevo"
+                document.querySelector("form").appendChild(p)
+            }
     
-    // Crea un objeto JSON con el string
-    let jsonCorreos = { "texto": email };
-
-    // Convierte el objeto JSON a una cadena
-    let jsonString = JSON.stringify(jsonCorreos);
-
-    // mostrar JSON en la consola para verificar
-    console.log(jsonString);
-
-    // guardar el JSON en localStorage
-    localStorage.setItem('jsonCorreos', jsonString); })
+        }
+    }

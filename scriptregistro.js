@@ -1,8 +1,6 @@
 window.onload = () => {
-    //let formulario = document.querySelector(".form-cuerpo"); //Para que no vaya a otro sitio y salte error cuando apretas submit
-    //formulario.addEventListener("submit", (event) => {
-       // event.preventDefault()
-   // })
+   
+//Validaciones de los input 
 
     let inputNombre = document.getElementById("nombre");
     inputNombre.addEventListener("keyup", () => {
@@ -82,52 +80,72 @@ window.onload = () => {
     }
    })
 
+//Validacion del formulario completo 
 
-//PRUEBA VALIDACION 1 No salta ningun mensaje cuando apreto registrar
-    //let botonEnviar = document.getElementById("enviar");
-    //botonEnviar.addEventListener("click", function(event) {
-      //  event.preventDefault();
+   let botonEnviar = document.getElementById("enviar");
+   botonEnviar.addEventListener("click", function(event) {
+       event.preventDefault();
+       
+       let erroresDiv = document.querySelector("div.errores");
+       let mensajeDiv = document.querySelector("div.mensaje");
+       
 
-      //  if (validarFormulario()){
-            //document.querySelector("div.errores").innerHTML = `<p> Revise los campos </p>`
-      //  } else {
-      //      document.querySelector("div.mensaje").innerHTML = `<p> Tu consulta fue enviada con exito. Espera una pronta respuesta </p>`
-      //  }
-    //});
-    //function validarFormulario (){
-      //  let inputNombre = document.getElementById("nombre").value;
-      //  let inputApellido = document.getElementById("apellido").value;
-      //  let inputEmail = document.getElementById("email").value;
-      //  let inputTelefono = document.getElementById("telefono").value;
-      //  let inputFecha = document.getElementById("fecha-viaje").value;
-      //  let inputPass = document.getElementById("password").value;
-      //  let inputRepeatPass = document.getElementById("confirmPassword").value;
+       if (validarFormulario()){
+            //Si hay errores, mostramos el mensaje de error y borro el mensaje anterior
+            mensajeDiv.innerText = "";
+            erroresDiv.innerText = "Por favor, complete todos los campos";
+        } else {
+            //Si no hay errores, mostramos el mensaje de exito
+            erroresDiv.innerText = "";
+            mensajeDiv.innerText = "Tu consulta fue enviada con exito. Espera una pronta respuesta."
+        }
+        guardarInformacion();
 
-      //  if (inputNombre.value.length < 2 || inputApellido.value.length < 2 || !inputEmail.value.includes("@") || inputTelefono.value.length < 9 || !inputFecha.value || inputPass.value.length < 5 || inputRepeatPass.value !== inputPass.value) {
-      //      return false; // El formulario no es válido
-      //  } else {
-      //      return true;
-      //  }
-            
-    //}
+   });
 
-//PRUEBA VALIDACION 2
-//function datos (){ //No me toma la funcion
-    //let inputNombre = document.getElementById ("nombre").value;
-    //let inputApellido = document.getElementById("apellido").value;
-    //let inputEmail = document.getElementById("email").value;
-    //let inputTelefono = document.getElementById("telefono").value;
-    //let inputFecha = document.getElementById("fecha-viaje").value;
-    //let inputPass = document.getElementById("password").value;
-    //let inputRepeatPass = document.getElementById("confirmPassword").value;
+   function validarFormulario (){
+       let inputNombre = document.getElementById("nombre");
+       let inputApellido = document.getElementById("apellido");
+       let inputEmail = document.getElementById("email");
+       let inputTelefono = document.getElementById("telefono");
+       //let inputFecha = document.getElementById("fecha-viaje");
+       let inputPass = document.getElementById("password");
+       let inputRepeatPass = document.getElementById("confirmPassword");
 
-    //if (!inputNombre || !inputApellido ||!inputEmail || !inputTelefono || !inputFecha || !inputPass || !inputRepeatPass){
-    //    document.querySelector("div.errores").innerHTML = `<p> Revise los campos </p>`
-    //}
-    //else {
-    //    document.querySelector("div.mensaje").innerHTML = `<p> Tu consulta fue enviada con exito. Espera una pronta respuesta </p>`
-    //}
-//}
+       if (inputNombre.value.length < 2 || inputApellido.value.length < 2 || !inputEmail.value.includes("@") || inputTelefono.value.length < 9 || inputPass.value.length < 5 || inputRepeatPass.value !== inputPass.value) {
+           
+           return true; // El formulario no es válido
+       } else {
+           return false; 
+       }
+           
+   }
 
+//Almacenar la informacion en storage 
+   function guardarInformacion () {
+    
+//Obtener la informacion que quiero guardar
+    let nombre = document.getElementById("nombre").value;
+    let apellido = document.getElementById("apellido").value;
+    let email = document.getElementById("email").value;
+    let telefono = document.getElementById("telefono").value;
+    let contrasena = document.getElementById("password").value;
+    let contrasenaConfirmada = document.getElementById("confirmPassword").value;
+
+    let informacion = {
+        Nombre: nombre,
+        Apellido: apellido,
+        Email: email,
+        Telefono: telefono,
+        Contrasena: contrasena,
+        Confirmacion: contrasenaConfirmada
+
+    };
+
+    sessionStorage.setItem("informacionUsuario", JSON.stringify(informacion));
+    console.log("Base de datos");
+    console.log(sessionStorage);
+
+   }
 
 }

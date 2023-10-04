@@ -289,6 +289,13 @@ background-color: #0a3143;
     font-size: 11px;
     text-decoration: underline ;
 }
+.mensaje{
+    font-size: 14px;
+    margin: 8px;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
 
 /*Formulario Login*/
 

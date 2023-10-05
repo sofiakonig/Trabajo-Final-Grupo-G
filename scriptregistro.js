@@ -98,6 +98,7 @@ window.onload = () => {
             //Si no hay errores, mostramos el mensaje de exito
             erroresDiv.innerText = "";
             mensajeDiv.innerText = "Tu consulta fue enviada con exito. Espera una pronta respuesta."
+            mensajeDiv.style.color = "black";
         }
         guardarInformacion();
 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a7f4aae58a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Carrito de Compras</title>
+</head>
+<header>
+    <img id="logo" class="imagenesredes" src="/Trabajo-Final-Grupo-G/imagenes/logo.webp" alt="">
+    <h1>TURISMO INGENIAS</h1>
+    </header>
+<body>
+    <header>
+        <section class="carrito-text">
+        <h2 id="title-cart">Carrito de Compras<i class="fa-solid fa-shop"></i></h2>
+        <p>Aquí encontrarás todos los servicios que tenemos disponibles para que puedas agregar a tu <i class="fa-solid fa-cart-shopping"></i></p>
+        <p> Para conocer más sobre nuestras propuestas podrás descubrilas en:</p>
+        <a href="tienda.html">Nuestra Tienda Online</a>
+        </section>
+        <nav class="barra-contenedor1">
+            <input type="search" placeholder="Buscar productos, marcas...">
+
+            <button><i class="fas fa-search"></i></button>
+        </nav>
+    </header>
+    <main class="carrito">
+        <div class="product">
+            <img src="imagenes/museo-a-cielo-abierto.jpg" alt="Producto 1">
+            <h4>Producto Perú</h4>
+            <p>Precio: $2820.00</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="imagenes/arg3.jpg" alt="Producto 2">
+            <h4>Producto Argentina</h4>
+            <p>Precio: $2000.00</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="imagenes/chile2.jpg" alt="Producto 3">
+            <h4>Producto Chile</h4>
+            <p>Precio: $3210.00</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="imagenes/colonia1.jpg" alt="Producto 4">
+            <h4>Producto Uruguay</h4>
+            <p>Precio: $1990.00</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <!-- Agregar más productos aquí -->
+    </main>
+    <aside>
+        <h3>Carrito<i class="fa-solid fa-shop"></i></h3>
+        <ul id="cart-list">
+            <!-- Los productos seleccionados se agregarán aquí -->
+        </ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout-button">Pagar</button>
+    </aside>
+    <footer class="tienda">
+        <p>2023 Tienda de Turismo</p>
+    </footer>
+    <script src="carrito.js"></script>
+</body>
+</html>

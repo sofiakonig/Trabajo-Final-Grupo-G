@@ -15,6 +15,7 @@ function buscarClima() {
             climaResultadoElement.innerHTML = `
                 <h5> La temperatura actual en ${ciudad} es</h5>
                 <p> ${temperatura} K </p>
+                <img src="imagenes/clima.jpg">
             `;
         })
         

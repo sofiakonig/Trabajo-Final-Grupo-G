@@ -176,8 +176,8 @@ iframe {
 .clima h4{
     font-size: 10px;
     color: #0a3143;
-    margin: 5px;
-    padding: 5px;
+    margin: 1px 5px 1px 5px;
+    padding: 1px;
 }
 .clima h5{
     font-size: 10px;
@@ -196,13 +196,16 @@ iframe {
     text-align: center;
     padding: 3px;
     background-color: #eaf3f8;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 500;
+    margin:2px;
 }
-
+.clima img {
+    width: 35px;
+    height: 35px;
+}
 #cityInput{
     font-size: 10px;
-
 }
 
 /*Estilos paises*/

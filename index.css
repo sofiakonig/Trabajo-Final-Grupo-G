@@ -166,6 +166,45 @@ iframe {
     margin: 15px;
 }
 
+.clima {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #eaf3f8;
+    border: 1px solid #0a3143;
+    margin: 10px;
+}
+.clima h4{
+    font-size: 10px;
+    color: #0a3143;
+    margin: 5px;
+    padding: 5px;
+}
+.clima h5{
+    font-size: 10px;
+    color: #0a3143;
+    margin: 5px;
+    padding: 5px;
+}
+.clima label {
+    font-size: 10px;
+    color: #0a3143;
+}
+.clima button {
+    font-size: 10px;
+}
+.clima p {
+    text-align: center;
+    padding: 3px;
+    background-color: #eaf3f8;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#cityInput{
+    font-size: 10px;
+
+}
+
 /*Estilos paises*/
 
 .titulos3 {
@@ -626,6 +665,7 @@ aside>button>#checkout-button {
     color: #0a3143;
 }
 
+
 @media(min-width: 768px) {
     #logo {
         width: 300px;
@@ -659,6 +699,7 @@ aside>button>#checkout-button {
 
     #destinosofrecidos {
         font-size: 30px;
+        margin: 10px;
     }
 
     .seccionimag img {

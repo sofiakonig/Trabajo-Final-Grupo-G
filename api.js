@@ -13,11 +13,10 @@ function buscarClima() {
             const temperatura = data.main.temp;
 
             climaResultadoElement.innerHTML = `
-                <h5>Información del Clima en ${ciudad}</h5>
-                <p>Temperatura: ${temperatura} K</p>
+                <h5> La temperatura actual en ${ciudad} es</h5>
+                <p> ${temperatura} K </p>
             `;
         })
         
-        
-        //.catch(error => console.error('Error al obtener datos del clima:', error));
+        .catch(error => console.error('Error al obtener datos del clima:', error));
 }

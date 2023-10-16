@@ -38,6 +38,16 @@
         <div>
             <h2 id="destinosofrecidos">DESTINOS OFRECIDOS</h2>
         </div>
+        <div>
+        <h4> Consulta el clima del lugar al que quieras viajar</h4>
+        <label for="cityInput">Ciudad:</label>
+        <input type="text" id="cityInput">
+        <button onclick="buscarClima()">Buscar Clima</button>
+        </div>
+        <div id="climaResultado">
+            <!-- Aquí se mostrará la información del clima -->
+        </div>
+
         <section class="seccionimag">
             <h3 class="dest">ARGENTINA</h3>
             <img src="imagenes/argentina.jpg" alt="">
@@ -107,6 +117,7 @@
             width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
+    <script src="api.js"></script>
     
 </body>
 

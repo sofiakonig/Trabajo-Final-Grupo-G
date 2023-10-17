@@ -27,6 +27,7 @@ fetch(apiUrl)
          })
         .catch(error => console.error('Error al obtener datos del clima:', error));
 
+
     }
 
 

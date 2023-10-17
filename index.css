@@ -169,36 +169,40 @@ iframe {
 .clima {
     padding: 5px;
     background-color: #eaf3f8;
-    border: 1px solid #0a3143;
+    border: 1px solid #b8babb;
     margin: 2% 20% 2% 20%;
 }
 .clima h4{
-    font-size: 8px;
+    font-size: 45%;
     color: #0a3143;
-    margin: 5px 20px 1px 20px;
+    margin: 3px 20px 1px 20px;
     padding: 1px;
 }
 .clima h5{
-    font-size: 6px;
+    font-size: 40%;
     color: #0a3143;
-    margin: 1px;
+    margin-top: 3px;
     padding: 1px;
 }
 
 .clima button {
-    font-size: 8px;
+    font-size: 40%;
 }
 .clima p {
-    text-align: center;
+    display: inline-flex;
+    align-items: center;
     padding: 1px;
     background-color: #eaf3f8;
-    font-size: 10px;
+    font-size: 50%;
     font-weight: 500;
-    margin:1px;
+    margin: 1px;
 }
 .clima img {
-    width: 35px;
-    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 5px;
+    width: 9%;
+    height: 9%;
 }
 #cityInput{
     font-size: 8px;
@@ -813,12 +817,12 @@ aside>button>#checkout-button {
 
     #tabla {
         font-size: 15px;
-    }
+    }   
     /*clima*/
-    .clima h4 {
-        padding: 1PX
+    .clima img {
+        width: 7%;
+        height: 7%;
     }
-
 
     /*Formulario Registro*/
 
@@ -997,6 +1001,22 @@ aside>button>#checkout-button {
         font-size: 20px;
     }
 
-    /*Tienda*/
-
+    /*Clima*/
+    .clima{
+        padding: 5px;
+        margin: 0.5% 30%;
+    }
+    .clima h4{
+        font-size: 50%;
+    }
+    .clima img{
+        width: 5%;
+        height: 5%;
+    }
+    .clima button {
+        font-size: 50%;
+    }
+    #cityInput{
+        font-size: 13px;
+    }
 }

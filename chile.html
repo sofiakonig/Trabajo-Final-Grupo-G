@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <img id="logo" class="imagenesredes" src="/Trabajo-Final-Grupo-G/imagenes/logo.webp" alt="logo">
+        <img id="logo" class="imagenesredes" src="imagenes/logo.webp" alt="logo">
          <h1>CHILE</h1>
         <nav>
             <ul class="menu">
@@ -34,6 +34,16 @@
                </p>
                <iframe  class="inframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14948854.994427798!2d-73.7820491979136!3d-23.832008544332997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x505e1131102b91d!2sChile!5e0!3m2!1ses-419!2sar!4v1690344299772!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <section class="clima">
+               <div>
+               <h4> Consulta el clima del lugar al que quieras viajar</h4>
+               <input type="text" id="cityInput">
+               <button onclick="buscarClima()">Buscar</button>
+               </div>
+               <div id="climaResultado">
+                   <!-- Aquí se mostrará la información del clima -->
+               </div>
+           </section>
             <div>
                <h2 id="destinosofrecidos">DESTINOS OFRECIDOS</h2>
                <ul class="menu">
@@ -52,7 +62,7 @@
                   arqueológicos, incluidas cerca de 900 estatuas monumentales llamadas "moáis", 
                   creadas por los habitantes entre los siglos XIII y XVI.
                </p>
-               <img src="/Trabajo-Final-Grupo-G/imagenes/isla-de-pascua(1).jpg" alt="Isla de Pascua">
+               <img src="imagenes/isla-de-pascua(1).jpg" alt="Isla de Pascua">
                <p>
                   La Isla de Pascua, denominado el segundo territorio poblado más distante en el mundo, estando ubicado en el océano Pacifico, 
                   por lo que se considera parte del continente Oceanía a pesar de ser territorio chileno.
@@ -63,7 +73,7 @@
                <ul class="flex-container-secundario">
                   <div class="cajadestinos">
                      <li class="destinosturisticos">ATARDECER EN TAHAI</li>
-                     <img  src="/Trabajo-Final-Grupo-G/imagenes/atardecer-tahai.jpg" alt="Atardecer en Tahai">
+                     <img  src="imagenes/atardecer-tahai.jpg" alt="Atardecer en Tahai">
                      <p>
                       En Tahai encontrarás 3 altares ceremoniales que datan del 700 a.c, el Ahu Vi Uri, el Ahu Tahai y el Ahu Ko Te Riku. Los altares de estas gigantescas figuras de piedra están dando la espalda al océano Pacífico justo donde se pone el sol, determinando que el atardecer sea una espectáculo realmente impresionante.
                       Verás que mucha gente camina hasta allí a ver la puesta de sol.
@@ -71,7 +81,7 @@
                   </div>
                   <div class="cajadestinos">
                      <li class="destinosturisticos">LA ALDEA CEREMONIAL DE ORONGO</li>
-                     <img  src="/Trabajo-Final-Grupo-G/imagenes/vista-superior-casas-de-orongo-isla-de-pascua.jpg" alt="Aldea Orongo"> 
+                     <img  src="imagenes/vista-superior-casas-de-orongo-isla-de-pascua.jpg" alt="Aldea Orongo"> 
                      <p>
                       Orongo es una aldea ceremonial y es de los sitios mejor conservados y más interesantes de la isla, puesto que hasta el día de hoy se reviven ancestrales competencias y tradiciones ancestrales Rapa Nui.
                       Se ubica al Suroeste del volcán Rano Kau y da hacia un acantilado casi perpendicular al mar. 
@@ -80,7 +90,7 @@
                   </div>
                   <div class="cajadestinos">
                      <li class="destinosturisticos">PLAYA  ANAKENA</li>
-                     <img  src="/Trabajo-Final-Grupo-G/imagenes/playa-anakena1.jpg" alt="playa anakena"> 
+                     <img  src="imagenes/playa-anakena1.jpg" alt="playa anakena"> 
                      <p>
                       Una de las playas más importante que tiene esta isla es la playa Anakena, se caracteriza por sus aguas cálidas, arena fina y un mar calmo, coronada con algunas palmeras y un gran altar, el Ahu Nau Nau, con 7 moais, los mejores conservados de la isla.
                       La playa cuenta con baños a la salida, su uso es de pago. También puedes encontrar algunos stands básicos para comprar para comer. 
@@ -97,7 +107,7 @@
                   Y es que el lugar más árido del mundo ofrece una variedad de paisajes y atractivos que parecen sacados de otro planeta. 
                   Aquí te damos una completa lista de qué hacer en San Pedro de Atacama y sus alrededores, ubicados en la Región de Antofagasta.
                </p>
-               <img class="estilo-section2" src="/Trabajo-Final-Grupo-G/imagenes/san-pedro-de-atacama.jpg" alt="san pedro de atacama"> 
+               <img class="estilo-section2" src="imagenes/san-pedro-de-atacama.jpg" alt="san pedro de atacama"> 
                <p class="estilo-section2">
                   La ciudad de San Pedro parece haberse quedado detenida en el tiempo. Aquí encontrarás poca electricidad y Wi Fi limitado, 
                   un lugar auténtico, pero bien preparado para atender a los más de miles de visitantes que llegan cada año. Te invitamos a dar 
@@ -110,7 +120,7 @@
                <ul class="flex-container-secundario">
                   <div class="cajadestinos">
                      <li class="destinosturisticos">VALLE DE LA LUNA</li>
-                     <img class="estilo-section2" src="/Trabajo-Final-Grupo-G/imagenes/valle-de-la-luna.jpg" alt="valle de la luna">
+                     <img class="estilo-section2" src="imagenes/valle-de-la-luna.jpg" alt="valle de la luna">
                      <p class="estilo-section2">
                         Con su etéreo paisaje lunar y sus montañas veteadas de rosa, el Valle de la Luna es la carta 
                         de presentación del Desierto de Atacama. Acá abundan los zorros chilla y culpeo, zorzales, aguiluchos
@@ -121,7 +131,7 @@
                   </div>
                   <div class="cajadestinos">
                      <li class="destinosturisticos">VALLE DEL ARCOIRIS</li>
-                     <img class="estilo-section2" src="/Trabajo-Final-Grupo-G/imagenes/valle-arcoiris.jpg" alt="valle arcoiris"> 
+                     <img class="estilo-section2" src="imagenes/valle-arcoiris.jpg" alt="valle arcoiris"> 
                      <p class="estilo-section2">
                         Este valle de tierras rojizas, verdes y amarillas, se encuentra a unos 90 kilómetros de San Pedro de Atacama,
                         cerca de los petroglifos de Yerbas Buenas. Su gran atractivo, aparte de la variedad de tonos producidos por la mezcla de minerales, arcilla y hierro, son las diversas formaciones rocosas producto de la erosión.
@@ -130,7 +140,7 @@
                   </div>
                   <div class="cajadestinos">
                      <li class="destinosturisticos"> LAGUNA CEJAR Y LAGUNAS DE BALTINACHE </li>
-                     <img class="estilo-section2" src="/Trabajo-Final-Grupo-G/imagenes/laguna-cejar-01.jpg" alt="laguna cejar"> 
+                     <img class="estilo-section2" src="imagenes/laguna-cejar-01.jpg" alt="laguna cejar"> 
                      <p class="estilo-section2">
                         Las lagunas y estanques alrededor del Desierto de Atacama tienen tal concentración de sal, que puedes flotar en ellas sin esfuerzo alguno. Se ubica a unos 19 kilómetros de San Pedro. Se realizan excursiones diarias.
                         Te recomendamos tomar un tour para admirar este colorido paisaje que irrumpe en medio del desierto.
@@ -151,7 +161,7 @@
                   inmigrantes británicos que llegaron para trabajar en el puerto con el 
                   legado colonial español.
                </P>
-               <img src="/Trabajo-Final-Grupo-G/imagenes/valparaiso-chile-panoramio.jpg" alt="valparaiso"> 
+               <img src="imagenes/valparaiso-chile-panoramio.jpg" alt="valparaiso"> 
                <p>
                   Esta característica tan especial, con sus casas de colores y laberinto de 
                   callecitas empedradas, hizo que Valparaíso fuera elegida como uno de 
@@ -162,7 +172,7 @@
                <ul class="flex-container-secundario">
                   <div class="cajadestinos">
                      <li class="destinosturisticos">LA CASA DE PABLO NERUDA</li>
-                     <img src="/Trabajo-Final-Grupo-G/imagenes/casa-de-neruda.jpg" alt="casa de pablo neruda">
+                     <img src="imagenes/casa-de-neruda.jpg" alt="casa de pablo neruda">
                      <p>
                         Pablo Neruda tuvo 3 casas famosas, una de ellas es "la sebastiana" que se encuentra en Valparaíso.
                         Es una casona con forma de barco, con unas vistas impresionantes de la ciudad y del puerto con el mar.
@@ -171,14 +181,14 @@
                   </div>
                   <div class="cajadestinos">
                      <li class="destinosturisticos"> CASCO HISTORICO DE VALPARAISO</li>
-                     <img src="/Trabajo-Final-Grupo-G/imagenes/valparaiso-unesco.jpg" alt="casco historico de valparaiso"> 
+                     <img src="imagenes/valparaiso-unesco.jpg" alt="casco historico de valparaiso"> 
                      <p>Aclamado como el San Francisco de América del Sur, el Barrio Histórico 
                         de Valparaíso es un sitio del Patrimonio Mundial de la UNESCO conocido por sus hermosos edificios, arte callejero y colinas empinadas. Visite para admirar la arquitectura histórica y tome un funicular de época hasta las cumbres de los cerros, donde encontrará cafés y bares de moda.
                      </p>
                   </div>
                   <div class="cajadestinos">
                      <li class="destinosturisticos">MUSEO A CIELO ABIERTO</li>
-                     <img src="/Trabajo-Final-Grupo-G/imagenes/museo-a-cielo-abierto.jpg" alt="museo a cielo abierto"> 
+                     <img src="imagenes/museo-a-cielo-abierto.jpg" alt="museo a cielo abierto"> 
                      <p>
                         El Museo a Cielo Abierto de Valparaíso es una iniciativa pionera en Chile y está compuesto por 20 murales de diversos estilos pictóricos. Se inaugura en 1992 y participan connotados artistas, algunos de fama mundial como Roberto Matta o Mario Carreño entre otros. 
                         Las pinturas se distribuyen por un amplio sector de este cerro, complementado con miradores y escaleras entre la atractiva arquitectura patrimonial.
@@ -247,13 +257,13 @@
 
    <h2 class="ultimostitulos">Seguinos en nuestras redes sociales</h2>
    <div class="redes">
-       <a href="https://www.instagram.com"><img src="/Trabajo-Final-Grupo-G/imagenes/instagram.avif" alt="instagram"></a>
-       <a href="https://www.tiktok.com/es/"><img src="/Trabajo-Final-Grupo-G/imagenes/tik tok.webp" alt="tik tok"></a>
-       <a href="https://www.youtube.com"><img src="/Trabajo-Final-Grupo-G/imagenes/youtube.png" alt="youTube"></a>
+       <a href="https://www.instagram.com"><img src="imagenes/instagram.avif" alt="instagram"></a>
+       <a href="https://www.tiktok.com/es/"><img src="imagenes/tik tok.webp" alt="tik tok"></a>
+       <a href="https://www.youtube.com"><img src="imagenes/youtube.png" alt="youTube"></a>
 
    </div>   
    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.010630347567!2d-58.3829359!3d-34.603892699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf5f033d6b%3A0x3994a0b35efda1a4!2sAv.%20Corrientes%201150%2C%20C1043AAY%20San%20Nicolas%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1689545219649!5m2!1ses!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
 </footer>
-
+<script src="api.js"></script>
 </body>
 </html>

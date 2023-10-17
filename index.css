@@ -173,41 +173,35 @@ iframe {
     margin: 2% 20% 2% 20%;
 }
 .clima h4{
-    display: flexbox;
-    font-size: 10px;
+    font-size: 8px;
     color: #0a3143;
     margin: 5px 20px 1px 20px;
     padding: 1px;
 }
 .clima h5{
-    display: flexbox;
-    font-size: 10px;
+    font-size: 6px;
     color: #0a3143;
-    margin: 5px;
-    padding: 5px;
+    margin: 1px;
+    padding: 1px;
 }
-.clima label {
-    font-size: 10px;
-    color: #0a3143;
-}
+
 .clima button {
-    font-size: 10px;
+    font-size: 8px;
 }
 .clima p {
-    display: block;
     text-align: center;
-    padding: 2px;
+    padding: 1px;
     background-color: #eaf3f8;
     font-size: 10px;
     font-weight: 500;
-    margin:2px;
+    margin:1px;
 }
 .clima img {
     width: 35px;
     height: 35px;
 }
 #cityInput{
-    font-size: 10px;
+    font-size: 8px;
 }
 
 /*Estilos paises*/

@@ -20,8 +20,9 @@ fetch(apiUrl)
 
             climaResultadoElement.innerHTML = `
                 <h5> La temperatura actual en ${ciudad} es</h5>
-                <p> ${temperaturaCelsius} °C </p>
+                <p> ${temperaturaCelsius} °C </p> 
                 <img src="imagenes/clima.jpg"> 
+                
             `;
          })
         .catch(error => console.error('Error al obtener datos del clima:', error));

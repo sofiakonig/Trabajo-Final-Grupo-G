@@ -167,19 +167,20 @@ iframe {
 }
 
 .clima {
-    border-radius: 5px;
     padding: 5px;
     background-color: #eaf3f8;
     border: 1px solid #0a3143;
-    margin: 10px;
+    margin: 2% 20% 2% 20%;
 }
 .clima h4{
+    display: flexbox;
     font-size: 10px;
     color: #0a3143;
-    margin: 1px 5px 1px 5px;
+    margin: 5px 20px 1px 20px;
     padding: 1px;
 }
 .clima h5{
+    display: flexbox;
     font-size: 10px;
     color: #0a3143;
     margin: 5px;
@@ -193,10 +194,11 @@ iframe {
     font-size: 10px;
 }
 .clima p {
+    display: block;
     text-align: center;
-    padding: 3px;
+    padding: 2px;
     background-color: #eaf3f8;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 500;
     margin:2px;
 }
@@ -818,6 +820,11 @@ aside>button>#checkout-button {
     #tabla {
         font-size: 15px;
     }
+    /*clima*/
+    .clima h4 {
+        padding: 1PX
+    }
+
 
     /*Formulario Registro*/
 

@@ -42,6 +42,16 @@
                     width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">UBICACIÓN:</iframe>
             </div>
+            <section class="clima">
+                <div>
+                <h4> Consulta el clima del lugar al que quieras viajar</h4>
+                <input type="text" id="cityInput">
+                <button onclick="buscarClima()">Buscar</button>
+                </div>
+                <div id="climaResultado">
+                    <!-- Aquí se mostrará la información del clima -->
+                </div>
+            </section>
             <div>
                 <h2 id="destinosofrecidos">DESTINOS OFRECIDOS</h2>
                 <ul class="menu">
@@ -263,6 +273,7 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </footer>
+    <script src="api.js"></script>
 </body>
 
 </html>

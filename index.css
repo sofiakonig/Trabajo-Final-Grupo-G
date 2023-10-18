@@ -166,6 +166,48 @@ iframe {
     margin: 15px;
 }
 
+.clima {
+    padding: 5px;
+    background-color: #eaf3f8;
+    border: 1px solid #b8babb;
+    margin: 2% 20% 2% 20%;
+}
+.clima h4{
+    font-size: 45%;
+    color: #0a3143;
+    margin: 3px 20px 1px 20px;
+    padding: 1px;
+}
+.clima h5{
+    font-size: 40%;
+    color: #0a3143;
+    margin-top: 3px;
+    padding: 1px;
+}
+
+.clima button {
+    font-size: 40%;
+}
+.clima p {
+    display: inline-flex;
+    align-items: center;
+    padding: 1px;
+    background-color: #eaf3f8;
+    font-size: 50%;
+    font-weight: 500;
+    margin: 1px;
+}
+.clima img {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 5px;
+    width: 9%;
+    height: 9%;
+}
+#cityInput{
+    font-size: 8px;
+}
+
 /*Estilos paises*/
 
 .titulos3 {
@@ -690,6 +732,7 @@ aside p {
     color: #ecececec;
 }
 
+
 @media(min-width: 768px) {
 
 
@@ -762,6 +805,7 @@ aside p {
 
     #destinosofrecidos {
         font-size: 30px;
+        margin: 10px;
     }
 
     .seccionimag img {
@@ -876,6 +920,11 @@ aside p {
 
     #tabla {
         font-size: 15px;
+    }   
+    /*clima*/
+    .clima img {
+        width: 7%;
+        height: 7%;
     }
 
     /*Formulario Registro*/
@@ -1055,6 +1104,22 @@ aside p {
         font-size: 20px;
     }
 
-    /*Tienda*/
-
+    /*Clima*/
+    .clima{
+        padding: 5px;
+        margin: 0.5% 30%;
+    }
+    .clima h4{
+        font-size: 50%;
+    }
+    .clima img{
+        width: 5%;
+        height: 5%;
+    }
+    .clima button {
+        font-size: 50%;
+    }
+    #cityInput{
+        font-size: 13px;
+    }
 }

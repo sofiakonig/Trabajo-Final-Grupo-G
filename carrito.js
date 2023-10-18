@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', function () {
         button.addEventListener('click', () => {
             const product = button.parentNode;
             const productName = product.querySelector('h4').textContent;
-            const productPrice = parseFloat(product.querySelector('p').textContent.replace('$', ''));
+            const productPrice = parseFloat(product.querySelector('p').textContent.slice(9));
+           console.log(product.querySelector('p').textContent);
             addToCart(productName, productPrice);
-        });
     });
-
+})
     // Evento para pagar
     const checkoutButton = document.getElementById('checkout-button');
     checkoutButton.addEventListener('click', () => {
@@ -42,9 +42,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 });
-
-
-
-
 
 

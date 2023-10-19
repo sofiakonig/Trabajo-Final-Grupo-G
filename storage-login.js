@@ -14,7 +14,7 @@
 
 
                 sessionStorage.setItem("sesionIniciada", true)
-                sessionStorage.setItem("username", inputUsuario)
+                sessionStorage.setItem("username", inputUsuario)`;
                 
             } else {
                 /*let p = document.createElement ("p")
@@ -24,10 +24,7 @@
                 <h5>Intente nuevamente</h5> 
                 <a href="login.html"><button id="botonLogin" type="button"><img  id= "imagenLogin" src= "imagenes/flechita.png" alt="flehita" ></button></a>
 
-             `;
-                
-        }
+             `;}
             }
     
         }
-    

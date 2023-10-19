@@ -6,12 +6,13 @@
             event.preventDefault();
             let inputUsuario = document.getElementById("email").value;
             if (correosRegistrados.includes(inputUsuario)) {
+
                
                 document.querySelector("form").innerHTML = ` 
                 <h5>Ingresó correctamente</h5> 
                 <a href="login.html"><button id="botonLogin" type="button"><img  id= "imagenLogin" src= "imagenes/flechita.png" alt="flehita" ></button></a>
 
-                `;
+
                 sessionStorage.setItem("sesionIniciada", true)
                 sessionStorage.setItem("username", inputUsuario)
                 

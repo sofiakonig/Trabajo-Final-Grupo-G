@@ -8,25 +8,31 @@
     <script src="https://kit.fontawesome.com/a7f4aae58a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 
 </head>
 
 <body>
-    <header>
-        <img id="logo" class="imagenesredes" src="imagenes/logo.webp" alt="">
-        <h1>TURISMO INGENIAS</h1>
-        <nav>
-            <ul class="menu">
-                <li><a href="argentina.html">ARGENTINA</a></li>
-                <li><a href="peru.html">PERU</a></li>
-                <li><a href="chile.html">CHILE</a></li>
-                <li><a href="uruguay.html">URUGUAY</a></li>
-                <li><a href="tienda.html"><i class="fa-solid fa-shop"></i> TIENDA</a>
+    <header class="header">
+        <div>
+        <img id="logo" src="imagenes/logo (1).webp" alt="Logo">
+        <h1 class="titulo-header">TURISMO INGENIAS</h1>
+        </div>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="argentina.html">Argentina</a></li>
+                <li><a href="peru.html">Perú</a></li>
+                <li><a href="chile.html">Chile</a></li>
+                <li><a href="uruguay.html">Uruguay</a></li>
+                <li><a href="tienda.html"><i class="fa-solid fa-shop"></i></a></li>
+                <li><a href="registrarse.html">Registrate</a></li>
             </ul>
         </nav>
-
     </header>
     <main>
         <div>
@@ -66,7 +72,7 @@
 
         </section>
         <section>
-            <form id= "newslatter"class="recibi-ofertas" action="">
+            <form id="newslatter" class="recibi-ofertas" action="">
                 <fieldset>
                     <legend>Recibí las últimas ofertas</legend>
                     <div>
@@ -78,12 +84,12 @@
                 </fieldset>
             </form>
         </section>
-            <section class="registrate">
-                <a href="registrarse.html"><i class="fas fa-sign-in-alt"></i>Registrate</a>
-            </section>
-            <div class="irAlInicio">
-                <a href="#">Ir al inicio de página <i class="fa-solid fa-house"></i></a>
-            </div>
+        <section class="registrate">
+            <a href="registrarse.html"><i class="fas fa-sign-in-alt"></i>Registrate</a>
+        </section>
+        <div class="irAlInicio">
+            <a href="#">Ir al inicio de página <i class="fa-solid fa-house"></i></a>
+        </div>
     </main>
 
     <footer>
@@ -104,7 +110,7 @@
             width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
-    
+    <script src="scripthamburguesa.js"></script>
 </body>
 
 </html>

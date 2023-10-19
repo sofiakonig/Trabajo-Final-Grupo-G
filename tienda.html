@@ -24,7 +24,7 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="#">Tours</a></li>
                     <li><a href="carrito.html"><i class="fa-solid fa-shop"></i>Carrito</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="login.html">Logueate <i class="fa-solid fa-user"></i></a></li>
                 </ul>
             </nav>
         </section>
@@ -32,91 +32,102 @@
         <main>
             <section class="productos">
                 <div class="producto">
-                    <img src="imagenes/cataratas.jpg" alt="Tour 1">
+                    <img id="img-tienda"src="imagenes/cataratas.jpg" alt="Tour 1">
                     <h3>Argentina</h3>
                     <h4>Tour Cataratas</h4>
-                    <p>Incluye hotel con desayuno y entrada a los parques</p>
+                    <h5>Incluye hotel con desayuno y entrada a los parques</h5>
                     <p>Precio: $100</p>
-                    <button>Reservar</button>
+                    <button class="add-to-cart">Reservar</button>
                 </div>
             </section>
             <section class="productos">
                 <div class="producto">
-                    <img src="imagenes/salta.jpg" alt="Tour 2">
+                    <img  id="img-tienda" src="imagenes/salta.jpg" alt="Tour 2">
                     <h3>Argentina</h3>
                     <h4>Tour Salta</h4>
-                    <p>Incluye hotel con desayuno y entrada al tren de las nubes</p>
+                    <h5>Incluye hotel con desayuno y entrada al tren de las nubes</h5>
                     <p>Precio: $150</p>
-                    <button>Reservar</button>
+                    <button class="add-to-cart">Reservar</button>
                 </div>
             </section>
             <section class="productos">
                 <div class="producto">
-                    <img src="imagenes/san-pedro-de-atacama.jpg" alt="Tour 3">
+                    <img  id="img-tienda" src="imagenes/san-pedro-de-atacama.jpg" alt="Tour 3">
                     <h3>Chile</h3>
                     <h4>Tour Atacama</h4>
-                    <p>Incluye hotel con desayuno y entrada a los parques</p>
+                    <h5>Incluye hotel con desayuno y entrada a los parques</h5>
                     <p>Precio: $200</p>
-                    <button>Reservar</button>
+                    <button class="add-to-cart">Reservar</button>
                 </div>
             </section>
             <section class="productos">
                 <div class="producto">
-                    <img src="imagenes/valparaiso-chile-panoramio.jpg" alt="Tour 4">
+                    <img  id="img-tienda" src="imagenes/valparaiso-chile-panoramio.jpg" alt="Tour 4">
                     <h3>Chile</h3>
                     <h4>Tour Valparaiso</h4>
-                    <p>Incluye hotel con desayuno y vistas panorámicas</p>
+                    <h5>Incluye hotel con desayuno y vistas panorámicas</h5>
                     <p>Precio: $180</p>
-                    <button>Reservar</button>
+                    <button class="add-to-cart">Reservar</button>
                 </div>
             </section>
             <section class="productos">
                 <div class="producto">
-                    <img src="imagenes/puertopuntadeleste.jpg" alt="Tour 5">
+                    <img id="img-tienda" src="imagenes/puertopuntadeleste.jpg" alt="Tour 5">
                     <h3>Uruguay</h3>
                     <h4>Tour Punta del Este</h4>
-                    <p>Incluye hotel con desayuno y paseo en yate</p>
+                    <h5>Incluye hotel con desayuno y paseo en yate</h5>
                     <p>Precio: $400</p>
-                    <button>Reservar</button>
+                    <button class="add-to-cart">Reservar</button>
                 </div>
             </section>
             <section class="productos">
                 <div class="producto">
-                    <img src="imagenes/PalacioSalvo_-Mdeo.jpg" alt="Tour 6">
+                    <img  id="img-tienda" src="imagenes/PalacioSalvo_-Mdeo.jpg" alt="Tour 6">
                     <h3>Uruguay</h3>
                     <h4>Tour Montevideo</h4>
-                    <p>Incluye hotel con desayuno y entrada al palacio</p>
+                    <h5>Incluye hotel con desayuno y entrada al palacio</h5>
                     <p>Precio: $350</p>
                     <button>Reservar</button>
                 </div>
             </section>
             <section class="productos">
                 <div class="producto">
-                    <img src="imagenes/machupicchu.jpg" alt="Tour 7">
+                    <img  id="img-tienda" src="imagenes/machupicchu.jpg" alt="Tour 7">
                     <h3>Perú</h3>
                     <h4>Tour Machupichu</h4>
-                    <p>Incluye hotel con desayuno, entrada a los parques y tren panoramico</p>
+                    <h5>Incluye hotel con desayuno, entrada a los parques y tren panoramico</h5>
                     <p>Precio: $600</p>
-                    <button>Reservar</button>
+                    <button class="add-to-cart">Reservar</button>
                 </div>
             </section>
             <section class="productos">
                 <div class="producto">
-                    <img src="imagenes/lima.jpg" alt="Tour 8">
+                    <img  id="img-tienda" src="imagenes/lima.jpg" alt="Tour 8">
                     <h3>Perú</h3>
                     <h4>Tour Lima</h4>
-                    <p>Incluye hotel con desayuno y city tour</p>
+                    <h5>Incluye hotel con desayuno y city tour</h5>
                     <p>Precio: $250</p>
-                    <button>Reservar</button>
+                    <button class="add-to-cart">Reservar</button>
                 </div>
             </section>
         </main>
+        <aside>
+            <h3>Mi tienda<i class="fa-solid fa-shop"></i></h3>
+            <ul id="cart-list">
+                <!-- Los productos seleccionados se agregarán aquí -->
+            </ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout-button">Reservar</button>
+        </aside>
+        <div class="irAlInicio">
+            <a href="index.html">Ir a la página de inicio<i class="fa-solid fa-house"></i></a>
+        </div>
+    
     
         <footer class="tienda">
             <p>2023 Tienda de Turismo</p>
         </footer>
-    </body>
-    </html>
+        <script src="tienda.js"></script>
 
 </body>
 </html>

@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Evento para pagar
     const checkoutButton = document.getElementById('checkout-button');
     checkoutButton.addEventListener('click', () => {
-        alert(`Total a pagar: $${cartTotal.textContent}`);
+        alert(`Tienes las siguientes reservas por un valor de: $${cartTotal.textContent}`);
 
     });
 });

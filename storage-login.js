@@ -9,7 +9,7 @@
                /* let p = document.createElement ("p");
                 p.innerText = "Ingreso con exito";
                 document.querySelector("form").appendChild (p) */
-                document.querySelector("form").innerText = "Ingreso con exito "
+                document.querySelector("form").innerText = "Ingreso con exito!!! "
                 sessionStorage.setItem("sesionIniciada", true)
                 sessionStorage.setItem("username", inputUsuario)
                 console.log(sessionStorage);

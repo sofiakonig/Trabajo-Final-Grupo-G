@@ -6,18 +6,26 @@
             event.preventDefault();
             let inputUsuario = document.getElementById("email").value;
             if (correosRegistrados.includes(inputUsuario)) {
-               /* let p = document.createElement ("p");
-                p.innerText = "Ingreso con exito";
-                document.querySelector("form").appendChild (p) */
-                document.querySelector("form").innerText = "Ingreso con exito!!! "
+
+               
+                document.querySelector("form").innerHTML = ` 
+                <h5>Ingresó correctamente</h5> 
+                <a href="login.html"><button id="botonLogin" type="button"><img  id= "imagenLogin" src= "imagenes/flechita.png" alt="flehita" ></button></a>
+
+
                 sessionStorage.setItem("sesionIniciada", true)
                 sessionStorage.setItem("username", inputUsuario)
-                console.log(sessionStorage);
+                
             } else {
                 /*let p = document.createElement ("p")
                 p.innerText = "Intente de nuevo"
                 document.querySelector("form")(p)*/
-                document.querySelector("form").innerText = "Intente de nuevo";
+                document.querySelector("form").innerHTML= ` 
+                <h5>Intente nuevamente</h5> 
+                <a href="login.html"><button id="botonLogin" type="button"><img  id= "imagenLogin" src= "imagenes/flechita.png" alt="flehita" ></button></a>
+
+             `;
+                
         }
             }
     

@@ -182,6 +182,7 @@ iframe {
     padding: 1px;
 }
 
+
 .clima h5 {
     font-size: 40%;
     color: #0a3143;
@@ -190,7 +191,10 @@ iframe {
 }
 
 .clima button {
-    font-size: 40%;
+    font-size: 50%;
+    background-color: #0a3143;
+    font-family: 'Rubik', sans-serif;
+    color: #efefef;
 }
 
 .clima p {
@@ -210,9 +214,9 @@ iframe {
     width: 9%;
     height: 9%;
 }
-
-#cityInput {
-    font-size: 8px;
+#cityInput{
+    font-size: 10px;
+    height: 13px;
 }
 
 /*Estilos paises*/
@@ -298,6 +302,17 @@ h4 {
     border: 1px solid #0a3143;
     margin: 10px;
 
+}
+
+#climaResultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Esto centrará el texto horizontalmente */
+}
+
+#climaResultado img {
+    margin: 0px;
 }
 
 td {
@@ -944,6 +959,10 @@ aside p {
     .clima img {
         width: 7%;
         height: 7%;
+    }
+    #cityInput{
+        font-size: 15px;
+        height: 18px;
     }
 
     /*Formulario Registro*/

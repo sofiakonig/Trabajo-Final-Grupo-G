@@ -18,11 +18,19 @@ fetch(apiUrl)
             // Convierte Kelvin a Celsius
             const temperaturaCelsius = kelvinCelsius(temperaturaKelvin).toFixed(2);
 
+            let imagenClima;
+
+            // Imagen que veo en función de la temperatura
+            if (temperaturaCelsius > 20) {
+                imagenClima = 'imagenes/soleado.jpg';
+            } else {
+                imagenClima = 'imagenes/frio2.png'; 
+            }
+
             climaResultadoElement.innerHTML = `
-                <h5> La temperatura actual en ${ciudad} es</h5>
+                <h5> La temperatura actual en ${ciudad} es:</h5>
                 <p> ${temperaturaCelsius} °C </p> 
-                <img src="imagenes/clima.jpg"> 
-                
+                <img src="${imagenClima}">
             `;
          })
         .catch(error => console.error('Error al obtener datos del clima:', error));

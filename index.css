@@ -521,6 +521,17 @@ main#ventana-login {
     height: 14px;
     width: 14px;
 }
+/*Login JS*/
+#imagenLogin {
+    width: 8%;
+    height: 8%;
+    background-color: transparent;
+
+}
+#botonLogin {
+    border: none;
+    background-color: transparent;
+}
 
 /*Nuestra Tienda*/
 #tienda-nav {
@@ -667,6 +678,8 @@ aside>button>#checkout-button {
     padding: 10px;
     color: #0a3143;
 }
+ 
+
 
 
 @media(min-width: 768px) {

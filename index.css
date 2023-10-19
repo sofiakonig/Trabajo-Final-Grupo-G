@@ -27,7 +27,7 @@ body {
 /*Titulo Principal*/
 h1 {
     color: #276e90;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     margin: 15px 0px 15px 0px;
 }
@@ -581,6 +581,11 @@ main {
     text-align: center;
     margin: 2px;
 }
+.producto h5 {
+    font-size: 12px ;
+    text-align: center;
+    margin: 2px;
+}
 
 .producto img {
     max-width: 100%;
@@ -614,6 +619,9 @@ main {
 #title-cart {
     padding: 10px;
     margin: 10px;
+}
+#search{
+    width: 200px;
 }
 
 .carrito-text>p {
@@ -735,7 +743,7 @@ aside p {
 
 @media(min-width: 768px) {
 
-
+/* Nav list--------------------*/
     .header {
         display: flex;
         align-items: center;
@@ -785,7 +793,7 @@ aside p {
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 35px;
         margin: 25px 0px 40px 0px;
     }
 
@@ -995,8 +1003,13 @@ aside p {
     }
 
     /*Tienda*/
-
+#img-tienda{
+   width: 350px;
+   height: 300px;
 }
+    }
+
+
 
 @media(min-width: 1000px) {
     #logo {
@@ -1005,7 +1018,7 @@ aside p {
     }
 
     h1 {
-        font-size: 65px;
+        font-size: 45px;
     }
 
     li {

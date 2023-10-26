@@ -35,13 +35,15 @@ h1 {
 li {
     /*Barra de navegacion*/
     list-style-type: none;
-    font-size: 18px;
+    font-size: 10px;
     text-decoration: none;
     padding: 2px;
 
 }
 .menu{
     display: flex;
+    justify-content: space-around;
+    padding: 5px;
 }
 .menu li:hover {
     text-decoration: underline;
@@ -824,7 +826,10 @@ aside p {
         gap: 1rem;
         
     }
-
+    li{
+        font-size: 20px;
+    }
+    
     .nav-list li a {
         text-decoration: none;
         color:#0a3143;
